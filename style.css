@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Merriweather, sans-serif;
+    background-color: #ebf2ff;
+
+}
+
+.button__primary{
+    color: white;
+background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+);
+
+border-radius: 6px;
+border: none;
+padding: 20px;
+font-size: 20px;
+
+}
+
+.navbar{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+    background-color: white;
+}
+.navbar__brand{
+    height: 100px;
+    width: 140px;
+}
+
+.navbar__logo{
+    height: 100%;
+    width: 100%;
+}
+
+.nav__item{
+    padding: 16px;
+    font-size: 16px;
+
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.Hero__container{
+    display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+
+}
+
+.Hero__image__container{
+    width: 100%;
+}
+
+.hero__image{
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media(min-width:768px){
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .navbar__brand{
+        height: 100px;
+        width: 150px;
+}
+.nav__item{
+    padding: 20px;
+    font-size: 20px;
+    
+    }
+    .Hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+}
+
+@media(min-width:1020px){
+    .container{
+        max-width: 1000px;
+    }
+ .Hero__image__container{
+     width: 500px;
+     height: 500px;
+ }
+}
+
+@media(min-width:1400px){
+
+}
