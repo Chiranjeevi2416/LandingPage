@@ -103,7 +103,30 @@ cursor: pointer;
     display: flex;
     justify-content: center;
 }
+.grid_container{
+    width: 100%;
+    margin-top: 50px;
+}
+.grid_row_1 , .grid_row_2{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.grid_row_1{
+    align-items: baseline;
+    margin-bottom: 4px;
+}
 
+.grid_one, .grid_two, .grid_three, .grid_four{
+    width: 100%;
+}
+.one, .fourth{
+    width: 100%;
+}
+.two, .three{
+    width: 100%;
+    height: 150px;
+}
 
 @media(min-width:768px){
     .navbar{
