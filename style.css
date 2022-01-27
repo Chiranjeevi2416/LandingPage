@@ -23,23 +23,21 @@ border-radius: 6px;
 border: none;
 padding: 20px;
 font-size: 20px;
-
+cursor: pointer;
 }
 
 .navbar{
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5px 20px;
     align-items: center;
-    background-color: white;
+    position: relative;
 }
 .navbar__brand{
     height: 100px;
     width: 140px;
 }
-
 .navbar__logo{
     height: 100%;
     width: 100%;
@@ -58,27 +56,49 @@ font-size: 20px;
 }
 
 .Hero__container{
-    display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+   
         width: 100%;
-        justify-content: space-between;
-        gap: 10px;
-
+        
 }
 
 .Hero__image__container{
     width: 100%;
+    position: relative;
 }
 
 .hero__image{
     width: 100%;
+    position: absolute;
 }
 
-
-
-
-
+.hero__text{
+    color: #1d3557;
+    font-size: 32px;
+    padding: 20px 0;
+}
+.Food_menu_conatiner{
+    width: 100%;
+    margin-top: 50px;
+}
+.food_menucard{
+    margin-bottom: 15px ;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+.food_image{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px ;
+}
+.food_menu_description{
+    padding: 20px;
+}
+.explore_text{
+    color: #1d3557;
+    font-size: 32px;
+    padding: 20px 0;
+    text-align: center;
+}
 
 
 @media(min-width:768px){
@@ -99,18 +119,32 @@ font-size: 20px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        justify-content: space-between;
+    }
+    .button__primary{
+        padding: 15px 10px;
+    }
 }
 
 @media(min-width:1020px){
     .container{
-        max-width: 1000px;
+        max-width: 900px;
     }
- .Hero__image__container{
-     width: 500px;
-     height: 500px;
+    .Hero__image__container{
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     justify-content: space-between;
+     gap: 10px;
  }
-}
 
-@media(min-width:1400px){
+ .hero__text{
+     font-size: 50px;
+ }
 
+
+ @media(min-width:1400px){
+    .container{
+        max-width: 1250px;
+    }
 }
